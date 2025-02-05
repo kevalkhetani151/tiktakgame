@@ -1,0 +1,44 @@
+{
+  "compilerOptions": {
+    /* Basic Options */
+    "target": "ES2020",                            /* Set the JavaScript version to ES2020 for better support */
+    "module": "commonjs",                          /* Use CommonJS module system for Node.js */
+    "lib": ["ES2020"],                             /* Include the relevant libraries for Node.js and ES2020 */
+    "moduleResolution": "node",                    /* Use Node.js module resolution strategy */
+    "esModuleInterop": true,                       /* Enable compatibility for CommonJS modules */
+    "forceConsistentCasingInFileNames": true,      /* Ensure consistent casing in imports */
+    "strict": false,                                /* Enable strict type checking */
+    "skipLibCheck": true,                          /* Skip type checking for declaration files */
+    "skipDefaultLibCheck": true,                   /* Skip type checking default libraries */
+    "resolveJsonModule": true,                     /* Allow importing JSON files */
+    "noImplicitAny": false,                         /* Raise error on variables implicitly inferred as 'any' */
+    "noEmit": false,                               /* Emit output files */
+    "declaration": true,                           /* Generate declaration files */
+    "sourceMap": true,                             /* Enable source maps */
+    "outDir": "./dist",                            /* Output the compiled files to the "dist" folder */
+    "rootDir": "./src",                            /* Specify the root directory for the source files */
+
+    /* Node.js specific settings */
+    "types": ["node"],                             /* Include Node.js type definitions */        
+
+    /* Type Checking */
+    "noUnusedLocals": false,                        /* Error on unused local variables */
+    "noUnusedParameters": false,                    /* Error on unused function parameters */
+    "noImplicitReturns": false,                     /* Error on functions that do not return a value */
+    "noFallthroughCasesInSwitch": true,            /* Error on fallthrough cases in switch statements */
+    "strictNullChecks": true,                      /* Ensure null/undefined are properly checked */
+    "strictFunctionTypes": true,                   /* Check function types more strictly */
+    "strictBindCallApply": true,                   /* Enforce type checks for bind/call/apply methods */
+    "strictPropertyInitialization": true,          /* Ensure class properties are properly initialized */
+
+    /* Additional Options */
+    "allowJs": false,                              /* Disallow JavaScript files */
+    "incremental": true,                           /* Enable incremental compilation */
+    "baseUrl": ".",                                /* Set base URL for module resolution */
+    "paths": {
+      "*": ["node_modules/*", "src/types/*"]       /* Resolve custom types from the 'src/types' folder */
+    }
+  },
+  "include": ["src/**/*.ts"],                       /* Include all TypeScript files in the src directory */
+  "exclude": ["node_modules", "dist"]               /* Exclude node_modules and dist folders */
+}
