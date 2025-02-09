@@ -1,7 +1,7 @@
 import { Request, Response, NextFunction } from "express";
 import jwt, { JwtPayload } from "jsonwebtoken";
 import { errorResponse } from "../../helper/responce";
-import { CustomError } from "../../helper/customeError";
+import { CustomError } from "../../helper/customeerror";
 import { ErrorCodes } from "../../const/code";
 
 export interface AuthenticatedRequest extends Request {
