@@ -1,6 +1,6 @@
 import {Request,Response,NextFunction} from 'express'
 import { RoomRepository } from '../../infastructure/repositories/RoomRepository';
-import { CustomError } from '../../helper/customeError';
+import { CustomError } from '../../helper/customeerror';
 import { ErrorCodes } from '../../const/code';
 import { errorResponse, successResponse } from '../../helper/responce';
 class RoomController {
