@@ -1,5 +1,5 @@
 import prisma from "../../config/db.config";
-import User from "../../domain/entity/User";
+import User from "../../domain/entity/user";
 import * as crypto from 'crypto';
 import Encryptncryptpassword from "../../helper/encryptpassword";
 
