@@ -6,7 +6,8 @@ import { ErrorCodes } from "../../const/code";
 import Encryptncryptpassword from "../../helper/encryptpassword";
 import JwtToken from "../../helper/jwtToken";
 import _ from "lodash";
-import { CustomError } from "../../helper/customeError";
+// import { CustomError } from "../../helper/customeError";
+import { CustomError } from "../../helper/customeerror";
 
 class UserController {
    private userRepositry = new InMemoryUserRepository();
